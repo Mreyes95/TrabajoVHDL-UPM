@@ -1,0 +1,72 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 13 20:01:48 2019
+| Host         : LAPTOP-3AGOL263 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file maquina_cafe_control_sets_placed.rpt
+| Design       : maquina_cafe
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     6 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            2 |
+|     12 |            2 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             208 |           52 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              52 |            6 |
+| Yes          | No                    | No                     |              24 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+----------------------------+---------------------------------+------------------+----------------+
+|          Clock Signal          |        Enable Signal       |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++--------------------------------+----------------------------+---------------------------------+------------------+----------------+
+|  I_display/I_divisor_reloj/CLK |                            |                                 |                1 |              8 |
+|  I_filtro/I_clk/clk_div        |                            |                                 |                4 |              8 |
+|  clk_IBUF_BUFG                 | I_cafetera/tiempo_restante |                                 |                4 |             12 |
+|  clk_IBUF_BUFG                 | I_cafetera/tiempo          |                                 |                3 |             12 |
+|  clk_IBUF_BUFG                 |                            | I_cafetera/contador[25]_i_1_n_0 |                6 |             52 |
+|  clk_IBUF_BUFG                 |                            |                                 |               47 |            192 |
++--------------------------------+----------------------------+---------------------------------+------------------+----------------+
+
+

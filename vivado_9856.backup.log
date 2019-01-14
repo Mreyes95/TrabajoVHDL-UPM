@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 14 15:00:55 2019
+# Process ID: 9856
+# Current directory: C:/Users/mreye/Desktop/Trabajo Definitivo/MaquinaCafe
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6448 C:\Users\mreye\Desktop\Trabajo Definitivo\MaquinaCafe\MaquinaCafe.xpr
+# Log file: C:/Users/mreye/Desktop/Trabajo Definitivo/MaquinaCafe/vivado.log
+# Journal file: C:/Users/mreye/Desktop/Trabajo Definitivo/MaquinaCafe\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mreye/Desktop/Trabajo Definitivo/MaquinaCafe/MaquinaCafe.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 825.676 ; gain = 147.141
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 14 15:06:50 2019...
